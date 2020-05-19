@@ -1,0 +1,111 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.container, table {
+  margin: 0 auto;
+}
+
+#table1 {
+  font: 100% Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+#table1 td, #table1 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#table1 th button {
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 50%;
+  padding: 5px;
+}
+#table1 tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+#table1 .tableRowSearch {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+#table1 .tableRowSearch:focus {
+  border-color: black;
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+}
+.container .data-change {
+  font-size: 14px;
+  font-weight: bold;
+}
+.container .searchbar {
+  padding: 10px 0;
+  margin-bottom: 12px;
+}
+.container .searchbar #tableSearch {
+  padding: 10px 0;
+  border: 1px solid #ddd;
+}
+.container .searchbar #tableSearch:focus {
+  border-color: black;
+  outline: none;
+}
+
+.row {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+header, footer {
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+footer .pagination {
+  display: inline-block;
+  margin-top: 10px;
+}
+footer .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+footer .pagination a.active {
+  background-color: #707970;
+  color: white;
+  border: 1px solid #707970;
+}
+footer .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .container {
+      width: 100%;
+  }
+
+  .fleft, .fright {
+    width: 100%;
+  }
+}
